@@ -7,6 +7,7 @@ pygame.init() # game won't work without this at beginning
 # colours
 white = (255, 255, 255)
 grey = (180,180, 180)
+blue = (0, 0, 255)
 red = (255, 0, 0)
 green = (0, 255, 0)
 black = (0, 0, 0)
@@ -236,7 +237,7 @@ while True:
             color = red
         else:
             msg = "Draw! Press R to restart"
-            color = grey
+            color = blue
 
         text = font.render(msg, True, color)
         screen.blit(text, (10, height // 2 - 14))
